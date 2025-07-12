@@ -52,3 +52,24 @@
 5. **Optimization**:
    - TensorRT acceleration
    - Multi-process pipelining
+  
+## Key Features:
+1. Modular Design:
+   - Separate processing for tactical/broadcast views
+   - Reusable components for tracking and ReID
+2. Advanced Tracking:
+   - ByteTrack for occlusion handling
+   - Motion modeling for ball prediction
+   - Adaptive appearance modeling
+
+3. Cross-View Matching:
+   - ResNet50 embedding extraction
+   - Cosine similarity metric
+   - Hungarian algorithm assignment
+
+4. Temporal Processing:
+   - Frame-by-frame ID smoothing
+   - Track history maintenance
+   - Gap bridging for occlusions
+
+The solution processes both camera views, maintains consistent player identification across views, and provides visual tracking markers with ball proximity detection. The Jupyter notebook includes the execution of both tacticam and the broadcast solutions together.
